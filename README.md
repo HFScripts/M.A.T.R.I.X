@@ -2,6 +2,8 @@
 
 This guide will walk you through the steps required to set up the Pentest Builder project. Please follow the steps as outlined below:
 
+![Image GIF](https://github.com/HFScripts/pentest-builder/blob/main/matrix.PNG)
+
 ## Pre-requisites
 - Kali Linux (Headless) on WSL.
 - RustScan version 2.0.1.
