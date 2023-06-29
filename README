@@ -1,0 +1,57 @@
+# Project Setup Instructions
+
+Follow the steps below to set up the project:
+
+1. Install Kali Linux (Headless) using WSL:
+
+    ```bash
+    wsl --install kali-linux-headless
+    ```
+
+2. Update the package lists:
+
+    ```bash
+    sudo apt update
+    ```
+
+3. Perform a full system upgrade:
+
+    ```bash
+    sudo apt full-upgrade -y
+    ```
+
+4. Install Kali Linux (Headless):
+
+    ```bash
+    sudo apt install -y kali-linux-headless
+    ```
+
+5. Run the `run.sh` script:
+
+    ```bash
+    sudo bash run.sh
+    ```
+
+6. Download and install RustScan (version 2.0.1):
+
+    ```bash
+    wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb
+    sudo dpkg -i rustscan_2.0.1_amd64.deb
+    rm rustscan_2.0.1_amd64.deb
+    ```
+
+7. Set executable permissions for the `gau` script:
+
+    ```bash
+    chmod +x utilities/tools/scripts/gau
+    ```
+
+That's it! The project setup is complete. You can now proceed with your development or testing tasks.
+
+TO DO: 
+- Configure the wordlist folder for tools such as `wfuzz`, `dnsrecon`, and `dirsearch`.
+- Fix the issue with `dirsearch` not found.
+- Remove color from `wpscan` output.
+- Make sure the `sqlmap` command is enclosed in quotes for the target.
+- Ensure the target URLs are specified correctly, as some tools may prefer URLs without the protocol (`http://` or `https://`) or `www.` prefix. Additional testing may be required, especially for `wpscan`.
+- Automate user interaction for `sqlmap` by answering "yes" to any prompts.
