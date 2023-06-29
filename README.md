@@ -1,4 +1,4 @@
-# Pentest Builder Project Setup
+# M.A.T.R.I.X - Multi-purpose Automated Testing and Reconnaissance Interface for eXploits
 
 This guide will walk you through the steps required to set up the Pentest Builder project. Please follow the steps as outlined below:
 
