@@ -32,7 +32,18 @@ Follow the steps below to set up the project:
     sudo bash run.sh
     ```
 
-6. Download and install RustScan (version 2.0.1):
+6. Clone this repository
+```bash
+
+git clone https://github.com/HFScripts/pentest-builder.git
+```
+
+7. CD into the folder
+```bash
+cd pentest-builder
+```
+
+8. Download and install RustScan (version 2.0.1):
 
     ```bash
     wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb
@@ -40,11 +51,14 @@ Follow the steps below to set up the project:
     rm rustscan_2.0.1_amd64.deb
     ```
 
-7. Set executable permissions for the `gau` script:
+9. Set executable permissions for the `gau` script:
 
     ```bash
     chmod +x utilities/tools/scripts/gau
     ```
+
+10. If you want HTTPX to work, you will need to extract it in the folder utilities/tools/scripts/httpx.rar
+- It was too big to upload to github upzipped but when I am done with this project you wont need to worry.
 
 That's it! The project setup is complete. You can now proceed with your development or testing tasks.
 
