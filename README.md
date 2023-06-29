@@ -81,6 +81,7 @@ Once all the above steps are complete, your project setup is finished! You can n
 
 ## To-Do List
 - Configure the wordlist folder for tools such as `wfuzz`, `dnsrecon`, and `dirsearch`.
+  - Display the wordlists in the selection to choose from as a number rather than word to stop typos.
 - Fix the issue with `dirsearch` not being found.
 - Remove color from `wpscan` output.
 - Enclose the `sqlmap` command for the target in quotes.
