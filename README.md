@@ -2,6 +2,8 @@
 
 This guide will walk you through the steps required to set up the Pentest Builder project. Please follow the steps as outlined below:
 
+- Keep in mind this is still heavily in progress. If you have any ideas or want to contribute just let me know.
+
 ![Image GIF](https://github.com/HFScripts/pentest-builder/blob/main/MATRIX2023.gif)
 
 ## Pre-requisites
