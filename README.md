@@ -2,7 +2,7 @@
 
 This guide will walk you through the steps required to set up the Pentest Builder project. Please follow the steps as outlined below:
 
-![Image GIF](https://github.com/HFScripts/pentest-builder/blob/main/matrix.PNG)
+![Image GIF](https://github.com/HFScripts/pentest-builder/blob/main/MATRIX2023.gif)
 
 ## Pre-requisites
 - Kali Linux (Headless) on WSL.
