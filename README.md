@@ -8,6 +8,10 @@ This guide will walk you through the steps required to set up the Pentest Builde
 - Kali Linux (Headless) on WSL.
 - RustScan version 2.0.1.
 
+## Note:
+- The terminal size matters. If you resize it too small for the text to fit, it will simply exit the application.
+- All files created from your scans will be in the output folder.
+
 ### Step-by-step Setup Guide
 
 1. Installing Kali Linux (Headless) using WSL
