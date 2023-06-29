@@ -6,65 +6,59 @@ This guide will walk you through the steps required to set up the Pentest Builde
 - Kali Linux (Headless) on WSL.
 - RustScan version 2.0.1.
 
-## Step-by-step Setup Guide
+### Step-by-step Setup Guide
 
-### 1. Installing Kali Linux (Headless) using WSL
+1. Installing Kali Linux (Headless) using WSL
 Install Kali Linux (Headless) using the command below:
-```bash
-wsl --install kali-linux-headless
-```
+    ```bash
+    wsl --install kali-linux-headless
+    ```
 
-### 2. Updating Package Lists
+2. Updating Package Lists
 Update the package lists for upgrades and new package installations:
-```bash
-sudo apt update
-```
+    ```bash
+    sudo apt update
+   ```
 
-### 3. Full System Upgrade
+3. Full System Upgrade
 Perform a full system upgrade:
-```bash
-sudo apt full-upgrade -y
-```
+    ```bash
+    sudo apt full-upgrade -y
+    ```
 
-### 4. Installing Kali Linux (Headless)
+4. Installing Kali Linux (Headless)
 Install Kali Linux (Headless):
-```bash
-sudo apt install -y kali-linux-headless
-```
+    ```bash
+    sudo apt install -y kali-linux-headless
+    ```
 
-### 5. Running `run.sh` Script
-Run the `run.sh` script:
-```bash
-sudo bash run.sh
-```
+5. Running `run.sh` Script
+    Run the `run.sh` script:
+    ```bash
+    sudo bash run.sh
+    ```
 
-### 6. Cloning the Repository
+6. Cloning the Repository
 Clone this repository:
-```bash
-git clone https://github.com/HFScripts/pentest-builder.git
-```
+    ```bash
+    git clone https://github.com/HFScripts/pentest-builder.git
+    ```
 
-### 7. Changing Directory to Project Folder
+7. Changing Directory to Project Folder
 Change directory into the project folder:
-```bash
-cd pentest-builder
-```
+    ```bash
+    cd pentest-builder
+    ```
 
-### 8. Installing RustScan (version 2.0.1)
+8. Installing RustScan (version 2.0.1)
 Download and install RustScan:
-```bash
-wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb
-sudo dpkg -i rustscan_2.0.1_amd64.deb
-rm rustscan_2.0.1_amd64.deb
-```
+    ```bash
+    wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb
+    sudo dpkg -i rustscan_2.0.1_amd64.deb
+    rm rustscan_2.0.1_amd64.deb
+    ```
 
-### 9. Setting Permissions for `gau` Script
-Set executable permissions for the `gau` script:
-```bash
-chmod +x utilities/tools/scripts/gau
-```
-
-### 10. Extracting HTTPX
+9. Extracting HTTPX
 If you want HTTPX to work, you need to extract it in the folder `utilities/tools/scripts/httpx.rar`. It was too large to upload to GitHub unzipped, but once the project setup is complete, this won't be a concern.
 
 ## Post Setup
