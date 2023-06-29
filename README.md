@@ -43,13 +43,13 @@ Install Kali Linux (Headless):
 6. Cloning the Repository
 Clone this repository:
     ```bash
-    [git clone https://github.com/HFScripts/pentest-builder.git](https://github.com/HFScripts/M.A.T.R.I.X.git)
+    git clone https://github.com/HFScripts/M.A.T.R.I.X.git
     ```
 
 7. Changing Directory to Project Folder
 Change directory into the project folder:
     ```bash
-    cd pentest-builder
+    cd M.A.T.R.I.X
     ```
 
 8. Installing RustScan (version 2.0.1)
@@ -62,6 +62,12 @@ Download and install RustScan:
 
 9. Extracting HTTPX
 If you want HTTPX to work, you need to extract it in the folder `utilities/tools/scripts/httpx.rar`. It was too large to upload to GitHub unzipped, but once the project setup is complete, this won't be a concern.
+
+
+10. Now you can simply run the main.py file
+    ```bash
+    python main.py
+    ```
 
 ## Post Setup
 
