@@ -131,7 +131,11 @@ class MainMenu(Menu):
         # Draw software installation status
         y_pos = len(self.greetings) + len(self.options) + 3
         for software, status in self.software_status.items():
-            self.stdscr.addstr(y_pos, 0, f"{software}: {status}", curses.color_pair(1))
+            if y_pos < height and len(f"{software}: {status}") < width:  # check if we can print
+                self.stdscr.addstr(y_pos, 0, f"{software}: {status}", curses.color_pair(1))
+            else:
+                # break the loop as we can't print more
+                break
             y_pos += 1
 
         # Draw footer
